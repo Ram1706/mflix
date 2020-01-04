@@ -1,9 +1,12 @@
 {
+  "homepage":"https://github.com/Ram1706/mflix",
   "name": "server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "nodemon -L ./index.js",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --passWithNoTests --watch",
